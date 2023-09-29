@@ -12,7 +12,7 @@ body {
 header {
   background-color: #333;
   color: #fff;
-  background-image: url("/assets/images/fores.jpg/");
+  background-image: url("/assets/images/fores.jpg");
   text-align: center;
   padding: 20px;
   margin-inline: 80px;
@@ -104,7 +104,7 @@ footer {
 /* Gaya untuk bagian Acara Pernikahan */
 #acara {
   background-color: #f9f9f9;
-  /* background-image: url("/assets/images/frame-wed.jpeg"); */
+  background-image: url("/assets/images/frame-wed.jpeg");
   background-size: 100%;
   padding: 2rem;
   text-align: center;
