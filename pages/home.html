@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Undangan Pernikahan</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>Undangan Pernikahan</h1>
+      <nav>
+        <ul>
+          <li><a href="#beranda">Beranda</a></li>
+          <li><a href="#acara">Acara</a></li>
+          <li><a href="#galeri">Galeri</a></li>
+          <li><a href="#rsvp">RSVP</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="acara">
+      <h2>Acara Pernikahan</h2>
+      <p>Fulan & Fulanah</p>
+
+      <h3>Akad Nikah</h3>
+      <div class="container">
+        <h2><i class="far fa-calendar"></i> Tanggal</h2>
+        <p>Acara pernikahan akan dilaksanakan pada:</p>
+        <p>27 Oktober 2023</p>
+      </div>
+      <div class="container">
+        <h2><i class="far fa-clock"></i> Waktu</h2>
+        <p>Acara pernikahan akan dimulai pada:</p>
+        <p>09.00 WIB</p>
+      </div>
+      <div class="container">
+        <h2><i class="fas fa-map-marker"></i> Lokasi</h2>
+        <p>Acara pernikahan akan diselenggarakan di tempat berikut:</p>
+        <address>Alamat: Jalan Contoh No. 123, Kota Contoh</address>
+      </div>
+
+      <h3>Resepsi Pernikahan</h3>
+      <div class="container">
+        <h2><i class="far fa-calendar"></i> Tanggal</h2>
+        <p>Acara pernikahan akan dilaksanakan pada:</p>
+        <p>27 Oktober 2023</p>
+      </div>
+      <div class="container">
+        <h2><i class="far fa-clock"></i> Waktu</h2>
+        <p>Acara pernikahan akan dimulai pada:</p>
+        <p>09.00 WIB</p>
+      </div>
+      <div class="container">
+        <h2><i class="fas fa-map-marker"></i> Lokasi</h2>
+        <p>Acara pernikahan akan diselenggarakan di tempat berikut:</p>
+        <address>Alamat: Jalan Contoh No. 123, Kota Contoh</address>
+      </div>
+    </section>
+
+    <section id="galeri">
+      <h2>Galeri</h2>
+      <p>
+        Kami ingin berbagi beberapa momen istimewa dari persiapan pernikahan
+        kami. Semoga Anda menikmati foto-foto berikut:
+      </p>
+
+      <div class="foto">
+        <img
+          src="https://i.pinimg.com/originals/af/5f/9f/af5f9f01286516694665aea2c713f8d3.jpg"
+          alt="Foto 1"
+        />
+        <p>Deskripsi foto pertama.</p>
+      </div>
+
+      <div class="foto">
+        <img
+          src="https://i.pinimg.com/originals/c2/3b/2b/c23b2bcf2544a45ecd2fb5aa779d04f7.jpg"
+          alt="Foto 2"
+        />
+        <p>Deskripsi foto kedua.</p>
+      </div>
+
+      <div class="foto">
+        <img
+          src="https://i.pinimg.com/originals/86/a9/7c/86a97c0af14de0e09072dee018343aee.jpg"
+          alt="Foto 3"
+        />
+        <p>Deskripsi foto ketiga.</p>
+      </div>
+
+      <div class="foto">
+        <img
+          src="https://i.pinimg.com/originals/e4/a0/5e/e4a05ec0080c6fb6a7891288d43f9203.jpg"
+          alt="Foto 3"
+        />
+        <p>Deskripsi foto ketiga.</p>
+      </div>
+
+      <div class="foto">
+        <img
+          src="https://i.pinimg.com/originals/61/46/0a/61460a3344f2327c119529cb183aaf22.jpg"
+          alt="Foto 3"
+        />
+        <p>Deskripsi foto ketiga.</p>
+      </div>
+      <div class="foto">
+        <img
+          src="https://i.pinimg.com/originals/0e/da/c4/0edac4a32a6671c35ea1acff745b75fe.jpg"
+          alt="Foto 3"
+        />
+        <p>Deskripsi foto ketiga.</p>
+      </div>
+
+      <!-- Tambahkan lebih banyak foto dan deskripsi sesuai kebutuhan -->
+    </section>
+
+    <section id="rsvp">
+      <h2>RSVP</h2>
+      <p>
+        Kami akan sangat senang jika Anda bisa hadir dalam hari bahagia kami.
+        Mohon konfirmasikan kehadiran Anda:
+      </p>
+
+      <form id="rsvpForm">
+        <label for="nama">Nama Lengkap:</label>
+        <input type="text" id="nama" name="nama" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="nomor-wa">Nomor WhatsApp:</label>
+        <input type="text" id="nomor-wa" name="nomor-wa" required>
+
+        <label for="konfirmasi">Konfirmasi Kehadiran:</label>
+        <select
+          id="konfirmasi"
+          name="konfirmasi"
+          onchange="tampilkanNomorRekening()"
+        >
+          <option value="Akan Hadir">Akan Hadir</option>
+          <option value="Akan Hadir Ngasih Hadiah">
+            Akan Hadir (Ngasih Hadiah)
+          </option>
+          <option value="Maff Tidak Bisa Hadir">
+            Maaf Tidak Bisa Hadir (Ngasih hadiah)
+          </option>
+          <option value="Masih Ragu">Masih Ragu</option>
+        </select>
+
+        <div id="hadiah-option" style="display: none">
+          <label>Pilihan Hadiah:</label>
+          <input
+            type="radio"
+            id="kirim-rekening"
+            name="hadiah"
+            value="Kirim Rekening"
+          />
+          <label for="kirim-rekening">Kirim Rekening</label>
+
+          <input
+            type="radio"
+            id="kirim-kado"
+            name="hadiah"
+            value="Kirim Kado Bentuk Barang"
+          />
+          <label for="kirim-kado">Kirim Kado Bentuk Barang</label>
+        </div>
+
+        <div id="nomor-rekening" style="display: none">
+          <label for="nomor-rek">Nomor Rekening:</label>
+          <input type="text" id="nomor-rek" name="nomor-rek" />
+        </div>
+
+        <div id="pesan">
+          <label for="pesan-ucapan">Pesan Ucapan:</label>
+          <textarea id="pesan-ucapan" name="pesan-ucapan"></textarea>
+        </div>
+
+        <button type="submit" onclick="submitRSVP()">Kirim Konfirmasi</button>
+      </form>
+    </section>
+
+    <footer>
+      <p>Terima kasih telah datang!</p>
+    </footer>
+
+    <script src="/js/script.js"></script>
+  </body>
+</html>
+
+<script>
+  function tampilkanNomorRekening() {
+    var konfirmasi = document.getElementById("konfirmasi").value;
+    var hadiahOption = document.getElementById("hadiah-option");
+    var nomorRekening = document.getElementById("nomor-rekening");
+
+    if (
+      konfirmasi === "Akan Hadir Ngasih Hadiah" ||
+      konfirmasi === "Maff Tidak Bisa Hadir"
+    ) {
+      hadiahOption.style.display = "block";
+
+      // Periksa apakah pilihan hadiah adalah "Kirim Kado Bentuk Barang"
+      var hadiah = document.querySelector('input[name="hadiah"]:checked');
+      if (hadiah && hadiah.value === "Kirim Kado Bentuk Barang") {
+        nomorRekening.style.display = "none";
+      } else {
+        nomorRekening.style.display = "block";
+      }
+    } else {
+      hadiahOption.style.display = "none";
+      nomorRekening.style.display = "none";
+    }
+  }
+
+  function submitRSVP() {
+    // Ambil data dari formulir dan lakukan apa yang diperlukan.
+    // Contoh: Validasi, kirim data ke server, dll.
+  }
+</script>
+
+<!-- <script>
+    function submitRSVP() {
+        var nama = document.getElementById("nama").value;
+        var email = document.getElementById("email").value;
+        var nomorWA = document.getElementById("nomor-wa").value;
+        var konfirmasi = document.getElementById("konfirmasi").value;
+        var hadiahOption = document.querySelector('input[name="hadiah"]:checked').value;
+        var nomorRekening = document.getElementById("nomor-rek").value;
+        var pesanUcapan = document.getElementById("pesan-ucapan").value;
+
+        // Lakukan apa pun yang diperlukan dengan data yang diambil dari formulir.
+        // Misalnya, Anda dapat mengirim data ini ke server atau melakukan validasi.
+
+        // Contoh: Tampilkan data di konsol.
+        console.log("Nama: " + nama);
+        console.log("Email: " + email);
+        console.log("Nomor WhatsApp: " + nomorWA);
+        console.log("Konfirmasi Kehadiran: " + konfirmasi);
+        console.log("Pilihan Hadiah: " + hadiahOption);
+        console.log("Nomor Rekening: " + nomorRekening);
+        console.log("Pesan Ucapan: " + pesanUcapan);
+    }
+
+    // Sembunyikan atau tampilkan bagian pilihan hadiah dan nomor rekening berdasarkan pilihan pengguna.
+    var hadiahOption = document.getElementById("hadiah-option");
+    var nomorRekening = document.getElementById("nomor-rekening");
+
+    hadiahOption.style.display = "none"; // Sembunyikan awalnya
+
+    document.querySelector('input[name="hadiah"]').forEach(function (radio) {
+        radio.addEventListener("change", function () {
+            if (this.value === "Kirim Rekening") {
+                nomorRekening.style.display = "block";
+            } else {
+                nomorRekening.style.display = "none";
+            }
+        });
+    });
+</script> -->

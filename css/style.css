@@ -1,0 +1,288 @@
+/* Gaya dasar untuk layout dan tampilan website */
+body {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  background-image: url("/assets/images/fores.jpg/");
+  text-align: center;
+  padding: 20px;
+  margin-inline: 80px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  margin-bottom: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+section {
+  padding: 2rem;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  margin-inline: 80px;
+}
+/* CSS untuk animasi */
+.animate {
+  transition: transform 0.3s ease;
+}
+
+/* Animasi ketika elemen di-hover */
+.animate:hover {
+  transform: scale(1.1);
+}
+
+/* Gaya untuk bagian Galeri */
+#galeri {
+  text-align: center;
+  background-image: url("/assets/images/fores.jpg/");
+  padding: 2rem;
+  color: #fff; /* Mengubah warna teks menjadi putih */
+  font-family: "Poppins", sans-serif; /* Menggunakan jenis font Poppins */
+  margin-inline: 80px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.galeri-container {
+  text-align: left; /* Agar teks di dalam foto berada di kiri */
+  max-width: 800px; /* Sesuaikan lebar galeri dengan kebutuhan Anda */
+  margin: 0 auto;
+}
+
+.foto {
+  display: inline-block; /* Menampilkan gambar dalam satu baris */
+  width: calc(25% - 20px); /* 25% lebar container dengan 20px margin */
+  margin: 10px; /* Jarak antara gambar */
+  text-align: center; /* Agar teks di dalam foto tetap di tengah */
+  position: relative;
+}
+
+.foto img {
+  max-width: 100%;
+  max-height: 200px; /* Atur tinggi maksimum gambar sesuai kebutuhan Anda */
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+  display: block;
+}
+
+.foto img:hover {
+  transform: scale(1.1);
+}
+
+.foto p {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #fff;
+}
+
+/* Gaya untuk bagian Acara Pernikahan */
+#acara {
+  background-color: #f9f9f9;
+  /* background-image: url("/assets/images/frame-wed.jpeg"); */
+  background-size: 100%;
+  padding: 2rem;
+  text-align: center;
+  margin-inline: 80px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  font-family: "Poppins", sans-serif;
+}
+
+#acara h2 {
+  font-size: 28px;
+  color: #333;
+}
+
+#acara p {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+#acara h3 {
+  font-size: 24px;
+  color: #444;
+}
+
+#acara h3 + p {
+  margin-top: 5px;
+}
+
+/* Gaya untuk detail acara */
+.acara-detail {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.acara-detail p {
+  margin: 10px 0;
+  font-size: 18px;
+  color: #444;
+}
+
+.acara-detail strong {
+  color: #333;
+}
+
+/* Gaya untuk bagian RSVP */
+#rsvp {
+  background-color: #f9f9f9;
+  padding: 2rem;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  margin-inline: 40px;
+}
+
+#rsvp h2 {
+  font-size: 28px;
+  color: #333;
+}
+
+#rsvp p {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+/* Gaya untuk bagian RSVP */
+#rsvp {
+  background-color: azure;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  padding: 2rem;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  margin-inline: 80px;
+}
+
+#rsvpForm {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.8
+  ); /* Latar belakang semi-transparan */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+#rsvpForm label {
+  display: block;
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+#rsvpForm input[type="text"],
+#rsvpForm input[type="email"],
+#rsvpForm input[type="number"],
+#rsvpForm textarea,
+#rsvpForm select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 14px;
+}
+
+#rsvpForm button[type="submit"] {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#rsvpForm button[type="submit"]:hover {
+  background-color: #555;
+}
+
+/* Gaya untuk pilihan konfirmasi kehadiran */
+#konfirmasi {
+  margin-top: 20px;
+}
+
+#konfirmasi label {
+  display: block;
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+#konfirmasi select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 14px;
+}
+
+#pilihanHadiah {
+  display: none; /* Sembunyikan awalnya */
+}
+
+/* Tampilkan form nomor rekening jika memilih "Kirim Hadiah" */
+#konfirmasi select:focus + #pilihanHadiah {
+  display: block;
+}
+
+/* Gaya untuk form nomor rekening */
+#nomorRekening {
+  display: none; /* Sembunyikan awalnya */
+}
+
+/* Tampilkan form nomor rekening jika memilih "Kirim Hadiah" dan memilih "Kirim Uang" */
+#pilihanHadiah select:focus + #nomorRekening {
+  display: block;
+}
+
+/* Gaya untuk form kado barang */
+#kadoBarang {
+  display: none; /* Sembunyikan awalnya */
+}
+
+/* Tampilkan form kado barang jika memilih "Kirim Hadiah" dan memilih "Kirim Barang" */
+#pilihanHadiah select:focus + #kadoBarang {
+  display: block;
+}
+
+/* Tambahkan gaya tambahan sesuai kebutuhan */
